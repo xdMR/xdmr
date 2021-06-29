@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
+
+
+
+* {
+    box-sizing: border-box;
+  }
+  :root {
+    --bgColor: #0a0e1b;
+    --linkColor: rgb(217 143 252);
+    --linkHover: rgb(223 119 254);
+  }
+
+  body {
+
+  }
+  h1,
+  h2,
+  h3,
+  p,
+  body,
+  li {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    color:rgb(86, 85, 97);
+  }
+  h1{
+    font-family: 'Playfair Display', serif;
+    font-size: 35px;
+    font-weight: 700;
+    color:#34343b;
+    max-width:400px;
+    margin-bottom: 20px;
+  }
+  h2{
+    font-family: 'Playfair Display', serif;
+    color:#34343b;
+    font-size:19px;
+    margin-bottom:20px;
+    margin-top:20px;
+
+  }
+  .text-center {
+    text-align: center;
+  }
+  .container{
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  .container-narrow{
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  .ptop-40{
+    padding-top:45px;
+  }
+  .right-text{
+    text-align: right;
+  }
+  .lets-talk{
+    font-family: 'Playfair Display', serif;
+    display: inline-block;
+    color:#34343b;
+    margin-top: 20px;
+    margin-bottom: 33px;
+    font-size:19px;
+  }
+  .lets-talk:hover{
+    color:#3E3E40;
+    font-family: 'Playfair Display', serif;
+    border-bottom:#3E3E40 3px solid ;
+    display: inline-block;
+    margin-bottom: 30px;
+  }
+  .hero{
+    min-height: 300px;
+    background-image: url("img/bg-img-repeat.png");
+    background-repeat: repeat;
+    background-size: 25px 25px;
+  }
+  .boxhang{
+    min-height: 100px;
+  }
+
+
+  .flex {
+    display: flex;
+  }
+  .basis30 {
+    flex-basis: 30%;
+  }
+  .basis40 {
+    flex-basis: 50%;
+  }
+  .basis60 {
+    flex-basis: 60%;
+  }
+  .basis70 {
+    flex-basis: 70%;
+  }
+  .basis50 {
+    flex-basis: 50%;
+  }
+  .left{
+    padding-right:20px;
+  }
+  .right{
+    padding-left:20px;
+  }
+  @media only screen and (max-width: 800px) {
+    .left, .right {
+      padding-right: 0px;
+      padding-left:0px;
+    }
+    .flex {
+      flex-direction: column;
+    }
+    .basis50 {
+      flex-basis: 100%;
+    }
+
+
+  }
+
+
+  @media only screen and (max-width: 600px) {
+    h1{
+      font-family: 'Playfair Display', serif;
+      font-size: 25px;
+      font-weight: 700;
+      color:#3E3E40;
+      max-width:90%
+    }
+  }
+
+
+
+  .bedge{
+    box-sizing: content-box;
+  position: relative;
+  width: 50px;
+  padding: 0px 5px;
+  top: 5px;
+  display: inline-block;
+}
