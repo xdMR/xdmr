@@ -74,7 +74,7 @@ h3 {
   padding: 0 20px;
 }
 .container-narrow {
-  max-width: 500px;
+  max-width: 550px;
   margin: 0 auto;
   padding: 0 20px;
 }
@@ -87,7 +87,12 @@ h3 {
   margin: 0 auto;
   padding: 0 20px;
 }
-.ptop-40 {
+
+.section-space{
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+.pt-40 {
   padding-top: 45px;
 }
 .right-text {
@@ -290,12 +295,36 @@ h3 {
   padding: 5px 20px;
   display: inline-block;
   text-align: center;
-  min-width: 190px;
+  min-width: 200px;
 }
-.portfolio-button:hover {
-  background-color: rgb(1, 7, 26);
-  color: white;
+
+.portfolio-button:hover,
+.portfolio-button:focus {
+  box-shadow: inset 200px 0 0 0 var(--hover);
 }
+.portfolio-button {
+  --color: rgb(1, 7, 26);
+  --hover: rgb(1, 7, 26);
+}
+
+.portfolio-button {
+  color: var(--color);
+  transition: 0.4s;
+}
+.portfolio-button:hover, .portfolio-button:focus {
+  border-color: var(--hover);
+  color: #fff;
+}
+.portfolio-button {
+  background: none;
+  border: 1px solid;
+  font: inherit;
+  line-height: 1;
+  padding: 1em 2em;
+}
+
+
+
 .button-enclose {
   display: flex;
   flex-wrap: wrap;
