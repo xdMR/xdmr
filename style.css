@@ -31,6 +31,13 @@ p {
   line-height: 1.7;
   padding-bottom: 20px;
 }
+a{
+  color: #3391bd;
+}
+a:hover{
+  color: #40b3e9;
+  text-decoration: underline;
+}
 h1 {
   font-family: "Playfair Display", serif;
   font-size: 35px;
