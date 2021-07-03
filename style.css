@@ -201,6 +201,12 @@ h3 {
   background-repeat: repeat;
   background-size: 25px 25px;
 }
+.sunset-cover{
+  height:100%; align-items: flex-end; display: flex; justify-content: flex-end; min-height: 300px;
+}
+.sunset{
+  max-width: 400px; position:relative; bottom:-10px;
+}
 .boxhang {
   min-height: 100px;
   padding-bottom: 20px;
