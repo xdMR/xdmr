@@ -49,7 +49,7 @@ h1 {
 h2 {
   font-family: "Playfair Display", serif;
   color: var(--heading);
-  font-size: 1.3em;
+  font-size: 1.5em;
   margin-bottom: 20px;
   margin-top: 10px;
 }
@@ -59,6 +59,12 @@ h3 {
   font-size: 1.1em;
   margin-bottom: 20px;
   margin-top: 10px;
+}
+h3 a{
+  color:#1411c7;
+}
+h3 a:hover{
+  color:#3431ee;
 }
 .img-resp {
   max-width: 100%;
@@ -94,7 +100,15 @@ h3 {
   margin: 0 auto;
   padding: 0 20px;
 }
-
+.w800{
+  max-width: 800px;
+}
+.w500{
+  max-width: 500px;
+}
+.w200{
+  max-width: 200px;
+}
 .section-space{
   margin-top: 80px;
   margin-bottom: 80px;
@@ -123,6 +137,9 @@ h3 {
 
 .flex {
   display: flex;
+}
+.justify-end{
+  justify-content:flex-end;
 }
 .basis30 {
   flex-basis: 33%;
