@@ -8,7 +8,7 @@
   --bgColor: #0a0e1b;
   --linkColor: rgb(217 143 252);
   --linkHover: rgb(223 119 254);
-  --heading: #34343b;
+  --heading: #0a1b32;
 }
 .dark-bg {
   background: var(--bgColor);
@@ -24,7 +24,7 @@ body,
 li {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
-  color: rgb(86, 85, 97);
+  color: rgb(47 46 68);
 }
 p {
   font-size: 1.2em;
@@ -32,10 +32,10 @@ p {
   padding-bottom: 20px;
 }
 a{
-  color: #3391bd;
+  color: #00828b;
 }
 a:hover{
-  color: #40b3e9;
+  color: #00b0bd;
   text-decoration: underline;
 }
 h1 {
@@ -46,6 +46,11 @@ h1 {
   max-width: 400px;
   margin-bottom: 20px;
 }
+.delightful{
+  color:#018d96;
+  border-bottom: 5px solid #018d96;
+}
+
 h2 {
   font-family: "Playfair Display", serif;
   color: var(--heading);
@@ -61,10 +66,14 @@ h3 {
   margin-top: 10px;
 }
 h3 a{
-  color:#1411c7;
+  font-size:20px;
+  color:#00828b;
 }
 h3 a:hover{
-  color:#3431ee;
+  color:#00d0df;
+  text-decoration: none;
+  cursor:hand;
+  cursor:zoom-in;
 }
 .img-resp {
   max-width: 100%;
@@ -218,11 +227,20 @@ h3 a:hover{
   background-repeat: repeat;
   background-size: 25px 25px;
 }
+.bg-dotted{
+  background-image: url("img/bg-img-repeat.png");
+  background-repeat: repeat;
+  background-size: 25px 25px;
+}
+
+.bg-white{
+  background: white;
+}
 .sunset-cover{
   height:100%; align-items: flex-end; display: flex; justify-content: flex-end; min-height: 300px;
 }
 .sunset{
-  max-width: 400px; position:relative; bottom:-10px;
+   position:relative; bottom:-10px;max-width: 400px;
 }
 .boxhang {
   min-height: 100px;
@@ -230,13 +248,21 @@ h3 a:hover{
   padding-top: 10px;
 }
 
+
 @media only screen and (max-width: 600px) {
+  .sunset{
+    max-width: 100%;
+  }
   h1 {
     font-family: "Playfair Display", serif;
     font-size: 25px;
     font-weight: 700;
     color: #3e3e40;
     max-width: 90%;
+  }
+  .delightful{
+    color:#018d96;
+    border-bottom: 2px solid #018d96;
   }
 }
 
