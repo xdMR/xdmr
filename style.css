@@ -1,10 +1,13 @@
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,800&display=swap');
+
+
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap");
 
 * {
   box-sizing: border-box;
 }
 :root {
+  --bgWhite: #fcfbfa;
   --bgColor: #0a0e1b;
   --linkColor: rgb(217 143 252);
   --linkHover: rgb(223 119 254);
@@ -14,7 +17,14 @@
   background: var(--bgColor);
 }
 
+::selection {
+  color: #001780;
+  background: #f2cffd;
+}
+
+
 body {
+  background: var(--bgWhite);
 }
 h1,
 h2,
@@ -41,7 +51,7 @@ a:hover{
 h1 {
   font-family: "Playfair Display", serif;
   font-size: 35px;
-  font-weight: 700;
+  font-weight: 600;
   color: var(--heading);
   max-width: 400px;
   margin-bottom: 20px;
@@ -52,22 +62,33 @@ h1 {
 }
 
 h2 {
-  font-family: "Playfair Display", serif;
+  font-family: 'Playfair Display', serif;
   color: var(--heading);
-  font-size: 1.5em;
+  font-size: 1.75em;
   margin-bottom: 20px;
   margin-top: 10px;
+  font-weight: 600;
+
+}
+h2 strong{
+  font-weight: 900;
+  color:rgb(3, 3, 3);
+  font-style: italic;
 }
 h3 {
-  font-family: "Playfair Display", serif;
+  font-family: 'Playfair Display', serif;
   color: var(--heading);
   font-size: 1.1em;
   margin-bottom: 20px;
   margin-top: 10px;
 }
+.project h2{
+  margin-bottom:5px;
+}
 h3 a{
-  font-size:20px;
-  color:#00828b;
+  font-style: italic;
+  font-size:1rem;
+  color:#007e9e;
 }
 h3 a:hover{
   color:#00d0df;
@@ -115,9 +136,13 @@ h3 a:hover{
 .w500{
   max-width: 500px;
 }
+.w300{
+  max-width: 300px;
+}
 .w200{
   max-width: 200px;
 }
+
 .section-space{
   margin-top: 80px;
   margin-bottom: 80px;
@@ -234,7 +259,7 @@ h3 a:hover{
 }
 
 .bg-white{
-  background: white;
+  background: var(--bgWhite);
 }
 .sunset-cover{
   height:100%; align-items: flex-end; display: flex; justify-content: flex-end; min-height: 300px;
@@ -256,7 +281,7 @@ h3 a:hover{
   h1 {
     font-family: "Playfair Display", serif;
     font-size: 25px;
-    font-weight: 700;
+    font-weight: 600;
     color: #3e3e40;
     max-width: 90%;
   }
