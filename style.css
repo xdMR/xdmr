@@ -102,6 +102,9 @@ h3 a:hover{
 .text-center {
   text-align: center;
 }
+.center{
+  margin: 0 auto;
+}
 .text-right {
   text-align: right;
 }
@@ -370,12 +373,14 @@ h3 a:hover{
 */
 .portfolio-button {
   color: var(--heading);
+  background: none;
   font-weight: 400;
   margin: 20px 10px 20px 0px;
   border: 1px solid var(--heading);
-  padding: 5px 20px;
+  padding: 1em 2em;
   display: inline-block;
   text-align: center;
+  line-height: 1;
   min-width: 200px;
 }
 
@@ -386,9 +391,6 @@ h3 a:hover{
 .portfolio-button {
   --color: rgb(1, 7, 26);
   --hover: rgb(1, 7, 26);
-}
-
-.portfolio-button {
   color: var(--color);
   transition: 0.4s;
 }
@@ -396,15 +398,6 @@ h3 a:hover{
   border-color: var(--hover);
   color: #fff;
 }
-.portfolio-button {
-  background: none;
-  border: 1px solid;
-  font: inherit;
-  line-height: 1;
-  padding: 1em 2em;
-}
-
-
 
 .button-enclose {
   display: flex;
@@ -417,6 +410,78 @@ h3 a:hover{
   }
 }
 
+
+/*
+  ShowButton
+*/
+
+.show-button {
+  color: var(--heading);
+  background: none;
+  font-weight: 400;
+  font-size:0.9em;
+  /* margin: 20px 10px 20px 0px; */
+  border: 1px solid rgb(206, 223, 231);
+  display: inline-block;
+  line-height: 1;
+  /* min-width: 230px; */
+
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  margin:5px;
+  margin-right:15px;
+
+}
+
+.show-button:hover,
+.show-button:focus {
+  box-shadow: inset 230px 0 0 0 var(--hover);
+}
+.show-button {
+  --color: rgb(1, 16, 100);
+  /* --color: rgb(77 12 137); */
+  --hover: rgb(219, 220, 245);
+
+  color: var(--color);
+  transition: 0.4s;
+}
+
+
+.show-button span{
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  padding-left:0.2em;
+  padding-right:0.75em;
+  display: inline-block;
+}
+
+.show-button .title{
+  font-size:0.85em;
+  font-weight: 600;;
+  color:rgb(0, 100, 139);
+  background-color: rgb(228, 239, 248);
+  padding: 0.8em 0.5em;
+  margin:0;
+
+  display: inline-block;
+}
+
+
+
+.show-button:hover, .show-button:focus {
+  /* border-color:rgb(206, 223, 231); */
+  color: rgb(77 12 137);
+}
+
+.show-button-enclose {
+  background-color: rgb(248, 249, 255);
+  display:inline-flex;
+}
+@media only screen and (max-width: 800px) {
+  .show-button-enclose {
+    justify-content: space-evenly;
+  }
+}
 /*
 
 #Buttons
