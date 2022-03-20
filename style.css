@@ -48,7 +48,16 @@ a:hover{
   color: #00b0bd;
   text-decoration: underline;
 }
+
 h1 {
+  color: #00828b !important;
+  font-family: "Playfair Display", serif;
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--heading);
+  margin-bottom: 10px;
+}
+.h1 {
   font-family: "Playfair Display", serif;
   font-size: 35px;
   font-weight: 600;
@@ -159,16 +168,23 @@ h3 a:hover{
   font-family: "Playfair Display", serif;
   display: inline-block;
   color: var(--heading);
-  margin-top: 20px;
-  margin-bottom: 33px;
+  border-bottom: transparent 3px solid;
+  /* margin-top: 20px;
+  margin-bottom: 33px; */
   font-size: 19px;
+
+  color: #00828b !important;
+  font-family: "Playfair Display", serif;
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--heading);
+  margin-bottom: 10px;
 }
 .lets-talk:hover {
   color: #2e2e30;
   font-family: "Playfair Display", serif;
-  border-bottom: #3e3e40 3px solid;
+  border-bottom: #00828b 3px solid;
   display: inline-block;
-  margin-bottom: 30px;
 }
 
 .red-shadow{
@@ -310,7 +326,7 @@ h3 a:hover{
   .sunset{
     max-width: 100%;
   }
-  h1 {
+  .h1 {
     font-family: "Playfair Display", serif;
     font-size: 25px;
     font-weight: 600;
